@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, purple, blue);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+h1 span {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Enhancements for a more spiritual look */
+body {
+    background: linear-gradient(to bottom, #3a1c71, #d76d77, #ffaf7b);
+}
+
+h2 {
+    font-style: italic;
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+    font-family: "Georgia", serif;
+}

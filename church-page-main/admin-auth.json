@@ -1,0 +1,62 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "juliusalas10@gmail.com",
+      "pass_hash": "Juliusalas123",
+      "role": "Admin",
+      "created_at": "2026-04-07T16:07:26.252Z"
+    }
+  ],
+  "tokens": [
+    {
+      "token": "f42674679f9d0ea36197ba7d3dafb3757b7fe6caa0b61a0a989ec39e2ef07f3a",
+      "user_id": 1,
+      "created_at": "2026-04-07T16:08:38.294Z",
+      "last_seen_at": "2026-04-07T16:08:38.295Z",
+      "expires_at": "2026-04-08T00:08:38.294Z"
+    },
+    {
+      "token": "8e2b8d94ba4ed3f58576ddc5ac7b213cb9b216b4d7113ded8a9ef2642a5642d3",
+      "user_id": 1,
+      "created_at": "2026-04-07T16:17:24.089Z",
+      "last_seen_at": "2026-04-07T16:17:24.089Z",
+      "expires_at": "2026-04-08T00:17:24.089Z"
+    },
+    {
+      "token": "c1d19c787e19fb90243b35ea812958d4a8990fa0d3a43158e46065d3f9535f7a",
+      "user_id": 1,
+      "created_at": "2026-04-07T16:19:55.347Z",
+      "last_seen_at": "2026-04-07T16:19:55.347Z",
+      "expires_at": "2026-04-08T00:19:55.347Z"
+    },
+    {
+      "token": "89b3e2a6d5b3ffb3c103e8786fa652fbc2aec0158c05466c12af09ab46b321a8",
+      "user_id": 1,
+      "created_at": "2026-04-07T16:20:18.572Z",
+      "last_seen_at": "2026-04-07T16:20:18.572Z",
+      "expires_at": "2026-04-08T00:20:18.572Z"
+    },
+    {
+      "token": "165c760121bda5829bc379b04b7700d88d68c79d0856fa9426d3164c25ead3c7",
+      "user_id": 1,
+      "created_at": "2026-04-07T16:24:47.360Z",
+      "last_seen_at": "2026-04-07T16:24:47.360Z",
+      "expires_at": "2026-04-08T00:24:47.360Z"
+    },
+    {
+      "token": "e9c372ead05f98535094373c4f9793e36d595b400f332e8ba20fcbd8a0a22ce2",
+      "user_id": 1,
+      "created_at": "2026-04-07T16:25:02.579Z",
+      "last_seen_at": "2026-04-07T16:25:02.579Z",
+      "expires_at": "2026-04-08T00:25:02.579Z"
+    },
+    {
+      "token": "3cd28eac95f6de14996a8be84e1ed331fe404466776f63cc7fe5dc2af9f86a72",
+      "user_id": 1,
+      "created_at": "2026-04-07T16:25:23.755Z",
+      "last_seen_at": "2026-04-07T16:25:23.755Z",
+      "expires_at": "2026-04-08T00:25:23.755Z"
+    }
+  ]
+}

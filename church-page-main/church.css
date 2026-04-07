@@ -1,0 +1,1078 @@
+:root {
+    --bg: #140028;
+    --bg-soft: #1a0b38;
+    --card: #1b0f33;
+    --primary: #c94bff;
+    --primary-strong: #9b3cff;
+    --accent: #4aa0ff;
+    --text: #f3f2ff;
+    --muted: #c1b6d8;
+    --stroke: rgba(255, 255, 255, 0.14);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', 'Segoe UI', Arial, sans-serif;
+    background:
+        radial-gradient(circle at 12% 18%, rgba(201, 75, 255, 0.22), transparent 24%),
+        radial-gradient(circle at 84% 12%, rgba(74, 160, 255, 0.22), transparent 26%),
+        linear-gradient(135deg, #2a0046 0%, #1a005f 46%, #001f8f 100%);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    color: var(--primary-strong);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.shell {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.site-header {
+    background: linear-gradient(90deg, rgba(33, 4, 58, 0.92), rgba(7, 11, 68, 0.95));
+    border-bottom: 1px solid var(--stroke);
+    box-shadow: 0 18px 32px rgba(0, 0, 0, 0.22);
+}
+
+.masthead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 18px 0;
+    flex-wrap: wrap;
+}
+
+.logo-badge {
+    height: 86px;
+    width: 86px;
+    border-radius: 18px;
+    object-fit: cover;
+    background: #0b1222;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+}
+
+.brand-block {
+    text-align: center;
+}
+
+.brand-block h1 {
+    margin: 2px 0 0;
+    font-size: 1.6rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.eyebrow {
+    margin: 0;
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.main-nav {
+    border-top: 1px solid var(--stroke);
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    padding: 12px 0 18px;
+    margin: 0;
+}
+
+.main-nav a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    color: var(--text);
+    border-radius: 12px;
+    transition: all 150ms ease;
+}
+
+.main-nav a:hover {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--primary-strong);
+}
+
+body.home-page .main-nav a[href*="church_HOME"],
+body.announcement-page .main-nav a[href*="announcement"],
+body.leaderboard-page .main-nav a[href*="leaderboard"] {
+    background: rgba(240, 180, 41, 0.14);
+    color: var(--primary-strong);
+    box-shadow: inset 0 0 0 1px rgba(240, 180, 41, 0.28);
+}
+
+.page-content {
+    padding: 32px 0 48px;
+}
+
+.page-hero {
+    background: linear-gradient(110deg, #3a046d 0%, #3713b5 50%, #0a32ff 100%);
+    border: 1px solid var(--stroke);
+    border-radius: 18px;
+    padding: 32px;
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.22);
+    text-align: left;
+}
+
+.doc-section {
+    margin: 26px 0 32px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 22px 22px 26px;
+    box-shadow: 0 22px 44px rgba(0, 0, 0, 0.30);
+}
+
+.doc-frame-wrap {
+    margin-top: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.34);
+    background: linear-gradient(135deg, rgba(255,255,255,0.09), rgba(255,255,255,0.04));
+}
+
+.doc-frame {
+    width: 100%;
+    height: 1200px;
+    border: 0;
+    display: block;
+    background: #101018;
+}
+
+.doc-note {
+    margin: 10px 0 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.admin-note {
+    margin-top: 18px;
+}
+
+.admin-steps {
+    padding-left: 20px;
+    margin: 10px 0 0;
+    color: var(--text);
+}
+
+.admin-steps li {
+    margin: 6px 0;
+    line-height: 1.6;
+}
+
+.login-form {
+    display: grid;
+    gap: 12px;
+    max-width: 360px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid var(--stroke);
+    background: rgba(255,255,255,0.04);
+    color: var(--text);
+}
+
+.footer-admin-link a {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.page-hero h2 {
+    margin: 8px 0 10px;
+    font-size: 2.1rem;
+    letter-spacing: -0.01em;
+}
+
+.lede {
+    color: var(--muted);
+    max-width: 720px;
+    margin: 0 0 18px;
+}
+
+.cta-group {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-weight: 700;
+    border: 1px solid transparent;
+    transition: transform 140ms ease, box-shadow 140ms ease, background 140ms ease;
+}
+
+.button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.button.primary {
+    background: linear-gradient(120deg, #c94bff, #7e3cff);
+    color: #f9f7ff;
+}
+
+.button.ghost {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: var(--stroke);
+    color: var(--text);
+}
+
+.info-grid {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.card {
+    background: linear-gradient(135deg, rgba(34, 9, 68, 0.92), rgba(17, 7, 54, 0.9));
+    border: 1px solid var(--stroke);
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.card h3 {
+    margin: 0 0 8px;
+    font-size: 1.1rem;
+}
+
+.card p {
+    margin: 0;
+    color: var(--muted);
+}
+
+.site-footer {
+    background: linear-gradient(90deg, #1c0436 0%, #0c154f 60%, #05173f 100%);
+    border-top: 1px solid var(--stroke);
+    padding: 26px 0 34px;
+    color: var(--muted);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    align-items: start;
+}
+
+.footer-logo {
+    height: 72px;
+    width: 72px;
+    border-radius: 14px;
+    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.footer-grid a {
+    color: var(--text);
+}
+
+.footer-grid h4 {
+    margin: 4px 0 6px;
+}
+
+.footer-grid p {
+    margin: 0 0 6px;
+    color: var(--muted);
+}
+
+/* Existing leaderboard styles start here */
+.hero-card,
+.leaderboard-shell {
+    background: linear-gradient(135deg, #7fd3ff, #b7f0ff);
+    color: white;
+    text-align: left;
+    border-radius: 18px;
+    padding: 26px 32px 36px;
+    margin-top: 20px;
+    min-height: calc(100vh - 280px);
+    box-shadow: 0 18px 36px rgba(16, 33, 74, 0.16);
+}
+.hero-card.theme-men {
+    background: linear-gradient(135deg, #7fd3ff, #b7f0ff);
+}
+
+.hero-card.theme-women {
+    background:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.48), transparent 22%),
+        radial-gradient(circle at 78% 30%, rgba(255,255,255,0.34), transparent 20%),
+        radial-gradient(circle at 60% 80%, rgba(255,255,255,0.26), transparent 24%),
+        linear-gradient(135deg, #fef3f5, #f5dce9 48%, #f9eef3);
+}
+
+.hero-card.theme-pastoral {
+    background:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.48), transparent 22%),
+        radial-gradient(circle at 78% 30%, rgba(255,255,255,0.34), transparent 20%),
+        radial-gradient(circle at 60% 80%, rgba(255,255,255,0.22), transparent 24%),
+        linear-gradient(135deg, #f5eef8, #e5d8f3 48%, #f8f1fb);
+}
+
+.leaderboardTopBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 14px;
+}
+
+.leaderboard-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.leader-tab {
+    border: 0;
+    border-radius: 999px;
+    padding: 10px 18px;
+    background: rgba(42, 47, 179, 0.12);
+    color: #2a2fb3;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.leader-tab.active {
+    background: #1976d2;
+    color: white;
+}
+
+.hero-card.theme-women .leader-tab,
+.hero-card.theme-pastoral .leader-tab,
+.hero-card.theme-women .fullscreenButton,
+.hero-card.theme-pastoral .fullscreenButton {
+    background: rgba(142, 24, 104, 0.12);
+    color: #8e1868;
+}
+
+.hero-card.theme-women .leader-tab.active,
+.hero-card.theme-pastoral .leader-tab.active {
+    background: #c46aa6;
+    color: #fff;
+}
+
+.fullscreenButton {
+    border: 0;
+    border-radius: 999px;
+    padding: 10px 18px;
+    background: rgba(42, 47, 179, 0.18);
+    color: #2a2fb3;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.statusMessage {
+    margin: 18px 0 0;
+    color: #2a2fb3;
+    font-weight: 700;
+    text-align: right;
+    font-size: 14px;
+}
+
+.statusMessage.isError {
+    color: #8b1e1e;
+}
+
+.leader-section {
+    display: none;
+    position: relative;
+    padding: 0;
+}
+
+.leader-section.active {
+    display: block;
+}
+
+.men,
+.women,
+.pastoral {
+    background: transparent;
+    border-radius: 14px;
+    padding: 24px;
+}
+
+.sectionHeader {
+    margin: 0 0 34px;
+    position: relative;
+}
+
+.sectionHeader h2 {
+    font-size: 56px;
+    font-weight: 900;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: 1px;
+    color: #2a2fb3;
+    text-transform: uppercase;
+}
+
+.topRightLabel {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    text-align: right;
+    font-weight: 900;
+    color: #2a2fb3;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 28px;
+    line-height: 1.05;
+}
+
+.hero-card.theme-women .sectionHeader h2,
+.hero-card.theme-women .topRightLabel,
+.hero-card.theme-women .statusMessage,
+.hero-card.theme-pastoral .sectionHeader h2,
+.hero-card.theme-pastoral .topRightLabel,
+.hero-card.theme-pastoral .statusMessage {
+    color: #8e1868;
+}
+
+.topRightLabel strong {
+    display: block;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.row {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    min-height: 74px;
+}
+
+.hero-card.theme-men .rankBox, .hero-card.theme-men .nameBox, .hero-card.theme-men .attBox { background: #2f9df4; }
+.hero-card.theme-women .rankBox, .hero-card.theme-women .nameBox, .hero-card.theme-women .attBox { background: #d7a7c5; }
+.hero-card.theme-pastoral .rankBox, .hero-card.theme-pastoral .nameBox, .hero-card.theme-pastoral .attBox { background: #caa7d8; }
+
+.rankBox {
+    width: 120px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.rankBox::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -34px;
+    width: 0;
+    height: 0;
+    border-top: 39px solid transparent;
+    border-bottom: 39px solid transparent;
+    border-left: 34px solid rgba(255,255,255,0.40);
+}
+
+.rankBox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -18px;
+    width: 0;
+    height: 0;
+    border-top: 39px solid transparent;
+    border-bottom: 39px solid transparent;
+    border-left: 18px solid rgba(255,255,255,0.70);
+}
+
+.rankNum {
+    position: relative;
+    z-index: 2;
+}
+
+.nameBox {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+    padding-right: 14px;
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    overflow: hidden;
+    min-width: 0;
+}
+
+.nameBox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 39px solid transparent;
+    border-bottom: 39px solid transparent;
+    border-left: 34px solid rgba(255,255,255,0.40);
+    transform: translateX(-34px);
+}
+
+.nameBox::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -34px;
+    width: 0;
+    height: 0;
+    border-top: 39px solid transparent;
+    border-bottom: 39px solid transparent;
+    border-left: 34px solid rgba(255,255,255,0.40);
+}
+
+.avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.85);
+    color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    margin: 0 14px 0 30px;
+    flex: 0 0 auto;
+}
+
+.leaderMeta {
+    min-width: 0;
+}
+
+.leaderName {
+    font-size: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.attBox {
+    width: 330px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 34px;
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 26px;
+}
+
+.attText {
+    white-space: nowrap;
+}
+
+.attBox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 39px solid transparent;
+    border-bottom: 39px solid transparent;
+    border-left: 34px solid rgba(255,255,255,0.40);
+    transform: translateX(-34px);
+}
+
+.attBox::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -44px;
+    width: 0;
+    height: 0;
+    border-top: 39px solid transparent;
+    border-bottom: 39px solid transparent;
+    border-left: 44px solid rgba(255,255,255,0.40);
+}
+
+.row:first-child .nameBox,
+.row:first-child .attBox,
+.row:first-child .rankBox {
+    filter: brightness(1.08);
+}
+
+:fullscreen body {
+    background: #000;
+}
+
+:fullscreen header,
+:fullscreen footer {
+    display: none;
+}
+
+:fullscreen main {
+    padding: 0;
+}
+
+:fullscreen .hero-card {
+    margin-top: 0;
+    min-height: 100vh;
+    padding-top: 22px;
+}
+
+.emptyState {
+    margin: 0;
+    padding: 22px 24px;
+    border-radius: 18px;
+    color: #2a2fb3;
+    background: rgba(255,255,255,0.55);
+    font-weight: 700;
+    max-width: 520px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: left;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-section p, .footer-section a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-logo {
+    height: 80px;
+    border-radius: 50%;
+}
+
+.social-icons img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.leaderboard-page {
+    font-family: 'Manrope', 'Segoe UI', Arial, sans-serif;
+    background:
+        radial-gradient(circle at 12% 18%, rgba(201,75,255,0.22), transparent 24%),
+        radial-gradient(circle at 82% 12%, rgba(74,160,255,0.22), transparent 26%),
+        linear-gradient(120deg, #240440 0%, #130d5a 44%, #001d88 100%);
+}
+
+.leaderboard-page main {
+    padding: 16px 22px 26px;
+}
+
+.leaderboard-page .hero-card {
+    --row-bg: #2f9df4;
+    --row-accent: rgba(255,255,255,0.55);
+    --text-strong: #1c2ba1;
+    min-height: calc(100vh - 180px);
+    max-width: 1460px;
+    margin: 10px auto 0;
+    border-radius: 16px;
+    box-shadow: 0 16px 32px rgba(14, 24, 66, 0.18);
+    padding: 16px 34px 26px;
+    overflow: hidden;
+}
+
+.leaderboard-page .hero-card.theme-men {
+    --row-bg: #2799f2;
+    --row-accent: #d9ecff;
+    --text-strong: #1c2ba1;
+    background:
+        radial-gradient(circle at 45% 18%, rgba(255,255,255,0.30), transparent 18%),
+        linear-gradient(95deg, #7fd3ff 0%, #d8eef5 52%, #66c7e8 100%);
+}
+
+.leaderboard-page .hero-card.theme-women {
+    --row-bg: #d289b8;
+    --row-accent: #f4e3ee;
+    --text-strong: #8a1b67;
+    background:
+        radial-gradient(circle at 45% 18%, rgba(255,255,255,0.30), transparent 18%),
+        linear-gradient(95deg, #f7e2ec 0%, #fbf4f6 52%, #f2d9e3 100%);
+}
+
+.leaderboard-page .hero-card.theme-pastoral {
+    --row-bg: #c09dd9;
+    --row-accent: #eee3f7;
+    --text-strong: #744690;
+    background:
+        radial-gradient(circle at 45% 18%, rgba(255,255,255,0.30), transparent 18%),
+        linear-gradient(95deg, #eee4f6 0%, #faf6fc 52%, #e9def2 100%);
+}
+
+.leaderboard-page .leaderboardTopBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+}
+
+.leaderboard-page .leaderboard-tabs {
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.leaderboard-page .leader-tab,
+.leaderboard-page .fullscreenButton {
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+}
+
+.leaderboard-page .statusMessage {
+    margin: 6px 0 0;
+    min-height: 14px;
+    font-size: 11px;
+    font-weight: 700;
+    text-align: right;
+    opacity: 0.6;
+}
+
+.leaderboard-page .leader-section {
+    padding: 0;
+}
+
+.leaderboard-page .sectionHeader {
+    margin: 0 0 22px;
+    position: relative;
+}
+
+.leaderboard-page .sectionHeader h2 {
+    max-width: 1100px;
+    margin: 0;
+    font-size: 3.5rem;
+    line-height: 0.95;
+    letter-spacing: -0.042em;
+    font-weight: 900;
+    color: var(--text-strong);
+}
+
+.leaderboard-page .topRightLabel {
+    top: 10px;
+    font-size: 1.6rem;
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+    text-align: right;
+    color: var(--text-strong);
+}
+
+.leaderboard-page .board {
+    gap: 10px;
+}
+
+.leaderboard-page .row {
+    min-height: 88px;
+    gap: 6px;
+    box-shadow: 0 10px 18px rgba(0,0,0,0.08);
+}
+
+.leaderboard-page .rankBox {
+    width: 112px;
+    font-size: 2rem;
+    border-radius: 0;
+    background: var(--row-bg);
+}
+
+.leaderboard-page .rankBox::after {
+    right: -38px;
+    border-top-width: 42px;
+    border-bottom-width: 42px;
+    border-left-width: 30px;
+    border-left-color: rgba(255,255,255,0.36);
+}
+
+.leaderboard-page .rankBox::before {
+    display: none;
+}
+
+.leaderboard-page .nameBox {
+    padding: 0 18px 0 16px;
+    border-radius: 0;
+    background: var(--row-bg);
+    position: relative;
+}
+
+.leaderboard-page .nameBox::after {
+    right: -38px;
+    border-top-width: 42px;
+    border-bottom-width: 42px;
+    border-left-width: 30px;
+    border-left-color: rgba(255,255,255,0.36);
+}
+
+.leaderboard-page .avatar {
+    width: 70px;
+    height: 70px;
+    margin: -2px 12px -2px 12px;
+    border-radius: 12px;
+    border: 3px solid rgba(255,255,255,0.92);
+    background: rgba(255,255,255,0.96);
+    color: #0f2a54;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    font-size: 1.18rem;
+    font-weight: 900;
+    letter-spacing: 0.01em;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.14);
+}
+
+.leaderboard-page .leaderName {
+    font-size: 1.5rem;
+    letter-spacing: -0.015em;
+    line-height: 1.04;
+    color: #ffffff;
+}
+
+.leaderboard-page .attBox {
+    width: 292px;
+    padding-left: 20px;
+    font-size: 1.3rem;
+    border-radius: 0;
+    background: var(--row-bg);
+    position: relative;
+}
+
+.leaderboard-page .attBox::after {
+    right: -44px;
+    border-top-width: 42px;
+    border-bottom-width: 42px;
+    border-left-width: 32px;
+    border-left-color: rgba(255,255,255,0.36);
+}
+
+.leaderboard-page .row.top .rankBox,
+.leaderboard-page .row.top .nameBox,
+.leaderboard-page .row.top .attBox {
+    filter: brightness(1.04);
+}
+
+.leaderboard-page .hero-card.theme-men .rankBox,
+.leaderboard-page .hero-card.theme-men .nameBox,
+.leaderboard-page .hero-card.theme-men .attBox {
+    background: var(--row-bg);
+}
+
+.leaderboard-page .hero-card.theme-women .rankBox,
+.leaderboard-page .hero-card.theme-women .nameBox,
+.leaderboard-page .hero-card.theme-women .attBox {
+    background: var(--row-bg);
+}
+
+.leaderboard-page .hero-card.theme-pastoral .rankBox,
+.leaderboard-page .hero-card.theme-pastoral .nameBox,
+.leaderboard-page .hero-card.theme-pastoral .attBox {
+    background: var(--row-bg);
+}
+
+.leaderboard-page .hero-card.theme-men .sectionHeader h2,
+.leaderboard-page .hero-card.theme-men .topRightLabel,
+.leaderboard-page .hero-card.theme-men .statusMessage,
+.leaderboard-page .hero-card.theme-men .leader-tab,
+.leaderboard-page .hero-card.theme-men .fullscreenButton {
+    color: var(--text-strong);
+}
+
+.leaderboard-page .hero-card.theme-women .sectionHeader h2,
+.leaderboard-page .hero-card.theme-women .topRightLabel,
+.leaderboard-page .hero-card.theme-women .statusMessage,
+.leaderboard-page .hero-card.theme-women .leader-tab,
+.leaderboard-page .hero-card.theme-women .fullscreenButton {
+    color: var(--text-strong);
+}
+
+.leaderboard-page .hero-card.theme-pastoral .sectionHeader h2,
+.leaderboard-page .hero-card.theme-pastoral .topRightLabel,
+.leaderboard-page .hero-card.theme-pastoral .statusMessage,
+.leaderboard-page .hero-card.theme-pastoral .leader-tab,
+.leaderboard-page .hero-card.theme-pastoral .fullscreenButton {
+    color: var(--text-strong);
+}
+
+.leaderboard-page .hero-card.theme-men .leader-tab.active {
+    background: #1976d2;
+    color: #fff;
+}
+
+.leaderboard-page .hero-card.theme-women .leader-tab.active {
+    background: #c36ba2;
+    color: #fff;
+}
+
+.leaderboard-page .hero-card.theme-pastoral .leader-tab.active {
+    background: #9f6db8;
+    color: #fff;
+}
+
+@media (max-width: 1100px) {
+    .hero-card,
+    .leaderboard-shell {
+        padding: 28px 20px 34px;
+    }
+
+    .sectionHeader h2 {
+        font-size: 38px;
+    }
+
+    .topRightLabel {
+        font-size: 20px;
+    }
+
+    .row {
+        min-height: 66px;
+    }
+
+    .rankBox {
+        width: 110px;
+        font-size: 28px;
+    }
+
+    .leaderName {
+        font-size: 24px;
+    }
+
+    .attBox {
+        width: 260px;
+        font-size: 22px;
+    }
+
+    .avatar {
+        width: 52px;
+        height: 52px;
+        margin-left: 28px;
+    }
+
+    .rankBox::after, .rankBox::before,
+    .nameBox::after, .nameBox::before,
+    .attBox::after, .attBox::before {
+        border-top-width: 33px;
+        border-bottom-width: 33px;
+    }
+}
+
+@media (max-width: 780px) {
+    .leaderboardTopBar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-card,
+    .leaderboard-shell,
+    .men,
+    .women,
+    .pastoral {
+        padding: 16px;
+    }
+
+    .topRightLabel {
+        display: none;
+    }
+
+    .attBox {
+        width: 220px;
+        padding-left: 30px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .rankBox, .nameBox, .attBox {
+        width: 100%;
+    }
+
+    .rankBox::after, .rankBox::before,
+    .nameBox::after, .nameBox::before,
+    .attBox::after, .attBox::before {
+        display: none;
+    }
+
+    .nameBox {
+        padding: 14px;
+    }
+
+    .attBox {
+        padding: 14px;
+        justify-content: flex-end;
+    }
+
+    .avatar {
+        margin: 0 12px 0 0;
+    }
+
+    .leaderName,
+    .attText {
+        white-space: normal;
+    }
+}
